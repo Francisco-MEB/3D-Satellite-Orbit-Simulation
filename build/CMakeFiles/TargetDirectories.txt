@@ -1,0 +1,3 @@
+/Users/luckyborlongan/Desktop/CubeSatSim/build/CMakeFiles/CubeSatSim.dir
+/Users/luckyborlongan/Desktop/CubeSatSim/build/CMakeFiles/edit_cache.dir
+/Users/luckyborlongan/Desktop/CubeSatSim/build/CMakeFiles/rebuild_cache.dir
