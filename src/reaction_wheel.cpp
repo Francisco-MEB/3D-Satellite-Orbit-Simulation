@@ -6,7 +6,7 @@ ReactionWheel::ReactionWheel(glm::vec3 axis, float inertia)
 
 void ReactionWheel::applyTorque(float torque, float dt)
 {
-    constexpr float maxTorque = 0.00005f; // N·m; value is typical for CubeSat wheels
+    constexpr float maxTorque = 0.00005f; // N*m; value is typical for CubeSat wheels
     float limitedTorque = glm::clamp(torque, -maxTorque, maxTorque);
 
     float angularAcc = limitedTorque / m_inertia;

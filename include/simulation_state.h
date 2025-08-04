@@ -31,6 +31,8 @@ struct SimulationState
     ReactionWheelSystem wheels;
 
     CameraMode cameraMode { CameraMode::FREE };
+
+    float simElapsedTime { 0.0f };
 };
 
 #endif

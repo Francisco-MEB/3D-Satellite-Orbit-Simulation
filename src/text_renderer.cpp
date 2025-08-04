@@ -9,7 +9,7 @@
 #include <iostream>
 
 TextRenderer::TextRenderer(unsigned int width, unsigned int height)
-    : m_width(width), m_height(height)
+    : m_width { width }, m_height { height }
 { 
     glm::mat4 projection = glm::ortho(0.0f, static_cast<float>(width),
                                       0.0f, static_cast<float>(height));

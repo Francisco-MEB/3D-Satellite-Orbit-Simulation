@@ -1,7 +1,7 @@
 #include "reaction_wheel_system.h"
 
 ReactionWheelSystem::ReactionWheelSystem()
-    : m_wheels{
+    : m_wheels {
         ReactionWheel(glm::vec3(1, 0, 0), 0.01f),
         ReactionWheel(glm::vec3(0, 1, 0), 0.01f),
         ReactionWheel(glm::vec3(0, 0, 1), 0.01f)
@@ -26,6 +26,7 @@ glm::vec3 ReactionWheelSystem::getTotalMomentum() const
     glm::vec3 L(0.0f);
     for (const auto& wheel : m_wheels)
         L += wheel.getAngularMomentum();
+
     return L;
 }
 
@@ -33,8 +34,9 @@ glm::vec3 ReactionWheelSystem::computeReactionTorque(float dt)
 {
     static glm::vec3 prevMomentum(0.0f);
     glm::vec3 currentMomentum = getTotalMomentum();
-    m_lastReactionTorque = -(currentMomentum - prevMomentum) / dt; // Store it
+    m_lastReactionTorque = -(currentMomentum - prevMomentum) / dt; // Store
     prevMomentum = currentMomentum;
+
     return m_lastReactionTorque;
 }
 

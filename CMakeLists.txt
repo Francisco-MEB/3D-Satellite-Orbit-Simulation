@@ -3,20 +3,16 @@ project(CubeSatSim)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Include directories
 include_directories(include)
-include_directories(/opt/homebrew/include)  # macOS Homebrew
+include_directories(/opt/homebrew/include)  
 include_directories(${CMAKE_SOURCE_DIR}/assimp/include)
 include_directories(${CMAKE_SOURCE_DIR}/include/freetype2/include)
 
-# Link directories
 link_directories(/opt/homebrew/lib)
 link_directories(${CMAKE_SOURCE_DIR}/assimp/build/lib)
 
-# Find and link FreeType
 find_package(Freetype REQUIRED)
 
-# Source files
 add_executable(CubeSatSim
     src/main.cpp
     src/functions_main.cpp
@@ -33,7 +29,6 @@ add_executable(CubeSatSim
     src/telemetry_display.cpp
 )
 
-# Link libraries
 target_link_libraries(CubeSatSim
     assimp
     glfw

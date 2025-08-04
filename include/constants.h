@@ -3,12 +3,19 @@
 
 #include "constants.h"
 
-inline constexpr int FONT_SIZE { 24 };
+namespace Window
+{
+    inline constexpr unsigned int SCR_WIDTH { 2560 }; // { 800 };
+    inline constexpr unsigned int SCR_HEIGHT { 1664 }; // { 600 };
+}
+
+// Miscallaneous
+inline constexpr int FONT_SIZE { 52 };
 
 inline constexpr float SECS_IN_DAY { 86400.0f };
 
-inline constexpr float MAX_DELTA_TIME { 0.01f }; // 100 FPS
-                                                 //
+inline constexpr float MAX_DELTA_TIME { 1.0f / 45.0f }; // 45 FPS
+                                                 
 // makes Earth radius 30 OpenGL units
 inline constexpr float SCALE_FACTOR { 1.0f / 212367.0f };
 
