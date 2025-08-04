@@ -30,6 +30,8 @@ void initNadirPointing(SimulationState& state)
 
     glm::mat3 R_desired(x_dir, y_dir, z_dir);
     state.cubesatOrientation = glm::normalize(glm::quat_cast(R_desired));
+    // state.cubesatOrientation = glm::quat(glm::vec3(glm::radians(20.0f), glm::radians(30.0f), glm::radians(10.0f)));
+    // ^ TEST CASE FOR NADIR POINTING (here, we don't begin at an ideal position)
 
     float mu = Physics::G * Physics::EARTH_MASS;
     float r_unscaled = glm::length(r) / SCALE_FACTOR;

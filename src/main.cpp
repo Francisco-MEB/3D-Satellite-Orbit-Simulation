@@ -135,23 +135,16 @@ int main(int argc, char *argv[])
          
         updateDeltaTime(state);
 
-
         const float simDeltaTime = state.deltaTime * SIM_SPEED;
         const int subSteps = 15;  
         float subDt = simDeltaTime / static_cast<float>(subSteps);
-
         for (int i = 0; i < subSteps; ++i)
         {
             propagateOrbit(state, subDt);          
             updateAttitudeControl(state, subDt);  
         }
+        state.simElapsedTime += simDeltaTime;
   
-        /* updateDeltaTime(state);
-        const float simDeltaTime { state.deltaTime * SIM_SPEED }; 
-
-        propagateOrbit(state, simDeltaTime);
-        updateAttitudeControl(state, simDeltaTime); */
-
         processInput(window, state);
 
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -191,13 +184,14 @@ int main(int argc, char *argv[])
                       state.cubesatOrientation);
         cubesat.draw();
 
+        // Telemetry
         telemetry.updateAndRender(
             state.wheels.getTorque(),
             state.wheels.getWheelAngularVelocity(0),
             state.wheels.getWheelAngularVelocity(1),
             state.wheels.getWheelAngularVelocity(2),
             glm::length(state.cubesatPos) / SCALE_FACTOR -  Physics::EARTH_RADIUS,
-            glfwGetTime(),
+            state.simElapsedTime,
             Window::SCR_WIDTH,
             Window::SCR_HEIGHT
         ); 
