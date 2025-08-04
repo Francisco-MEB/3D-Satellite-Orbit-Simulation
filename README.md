@@ -1,9 +1,6 @@
 ![Free View](./preview/free_shot1.png)  
 [Satellite reflecting as it orbits Earth]
 
-![Free View](./preview/free_shot2.png)  
-[Satellite reflecting as it orbits Earth]
-
 ![Follow View](./preview/follow_shot.png)
 [Satellite against space and Earth backdrop]
 
