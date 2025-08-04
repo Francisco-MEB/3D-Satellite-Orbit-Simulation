@@ -30,29 +30,9 @@ Camera camera { glm::vec3(0.0f, 0.0f, 50.0f) };
 
 int main(int argc, char *argv[])
 {
-    SimulationState state;
-
+    SimulationState state; 
     state.cubesatVel = calculateCubesatVel();
-
-
-    glm::vec3 r = state.cubesatPos;
-    glm::vec3 v = state.cubesatVel;
-
-    glm::vec3 z_dir = glm::normalize(-r);                    
-    glm::vec3 h = glm::normalize(glm::cross(r, v));         
-    glm::vec3 x_dir = glm::normalize(glm::cross(h, z_dir)); 
-    glm::vec3 y_dir = glm::cross(z_dir, x_dir);             
-
-    glm::mat3 R_desired(x_dir, y_dir, z_dir);
-    // state.cubesatOrientation = glm::normalize(glm::quat_cast(R_desired));
-    state.cubesatOrientation = glm::normalize(glm::quat(glm::vec3(glm::radians(20.0f), glm::radians(10.0f), glm::radians(-15.0f))));
-
-
-    float mu = Physics::G * Physics::EARTH_MASS;
-    float r_unscaled = glm::length(r) / SCALE_FACTOR;
-    float orbitalRate = std::sqrt(mu / (r_unscaled * r_unscaled * r_unscaled));
-
-    state.cubesatAngularVel = R_desired * glm::vec3(0.0f, orbitalRate, 0.0f);
+    initNadirPointing(state);
 
     declareHints();
     GLFWwindow *window = initWindow(state);
@@ -146,8 +126,6 @@ int main(int argc, char *argv[])
     cubesatShader.setInt("material.specular", 4);
     cubesatShader.setInt("material.topDiffuse", 5);
     cubesatShader.setInt("material.bottomDiffuse", 6);
-
-    state.cubesatVel = calculateCubesatVel();
 
     // To the user: check terminal for detailed sim speed info
     const float SIM_SPEED = getSimSpeed();

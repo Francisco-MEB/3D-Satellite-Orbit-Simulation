@@ -18,6 +18,26 @@ bool firstMouse { true };
 
 bool cKeyPressedLastFrame { false };
 
+void initNadirPointing(SimulationState& state)
+{
+    glm::vec3 r = state.cubesatPos;
+    glm::vec3 v = state.cubesatVel;
+
+    glm::vec3 z_dir = glm::normalize(-r);
+    glm::vec3 h = glm::normalize(glm::cross(r, v));
+    glm::vec3 x_dir = glm::normalize(glm::cross(h, z_dir));
+    glm::vec3 y_dir = glm::cross(z_dir, x_dir);           
+
+    glm::mat3 R_desired(x_dir, y_dir, z_dir);
+    state.cubesatOrientation = glm::normalize(glm::quat_cast(R_desired));
+
+    float mu = Physics::G * Physics::EARTH_MASS;
+    float r_unscaled = glm::length(r) / SCALE_FACTOR;
+    float orbitalRate = std::sqrt(mu / (r_unscaled * r_unscaled * r_unscaled));
+
+    state.cubesatAngularVel = R_desired * glm::vec3(0.0f, orbitalRate, 0.0f);
+}
+
 void renderSkybox(Shader& skyboxShader, const glm::mat4& view, const glm::mat4& projection, 
                   unsigned int skyboxVAO, unsigned int cubemapTexture)
 {

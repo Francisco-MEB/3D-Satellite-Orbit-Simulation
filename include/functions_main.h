@@ -15,6 +15,7 @@ namespace Window
     inline constexpr unsigned int SCR_HEIGHT { 600 };
 }
 
+void initNadirPointing(SimulationState& state);
 void renderSkybox(Shader& skyboxShader, const glm::mat4& view, const glm::mat4& projection,
                   unsigned int skyboxVAO, unsigned int cubemapTexture);
 void renderSun(Shader& sunShader, const glm::mat4& view, const glm::mat4& projection,
