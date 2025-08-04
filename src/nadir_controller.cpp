@@ -24,7 +24,7 @@ glm::vec3 computeNadirTorque(const SimulationState& state)
     glm::vec3 r = state.cubesatPos;
     glm::vec3 v = state.cubesatVel;
 
-    // +Z → Earth
+    // +Z must face Earth
     glm::vec3 z_dir = glm::normalize(-r);
     glm::vec3 h = glm::normalize(glm::cross(r, v));
     glm::vec3 x_dir = glm::normalize(glm::cross(h, z_dir));
@@ -43,7 +43,7 @@ glm::vec3 computeNadirTorque(const SimulationState& state)
 
     // Orbital rate
     float mu = Physics::G * Physics::EARTH_MASS;
-    float r_unscaled = glm::length(r); // FIX FIX FIX
+    float r_unscaled = glm::length(r);
     float orbitalRate = std::sqrt(mu / (r_unscaled * r_unscaled * r_unscaled));
     glm::vec3 desiredAngVel = R_desired * glm::vec3(0.0f, orbitalRate, 0.0f);
 
