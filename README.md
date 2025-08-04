@@ -1,7 +1,5 @@
 [Technical Overview (PDF)](./preview/satellite_technical_overview.pdf)
 ---
-Preview Images
-
 ![Free View](./preview/free_shot1.png)  
 [Satellite reflecting as it orbits Earth]
 
