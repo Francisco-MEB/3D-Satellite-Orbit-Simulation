@@ -15,7 +15,7 @@ inline const glm::mat3 CUBESAT_INERTIA = glm::mat3(
 
 inline const glm::mat3 INV_INERTIA = glm::inverse(CUBESAT_INERTIA);
 
-void updateAttitude(SimulationState& state, const glm::vec3& appliedTorque);
+void updateAttitude(SimulationState& state, const glm::vec3& appliedTorque, float simDeltaTime);
 
 #endif
 

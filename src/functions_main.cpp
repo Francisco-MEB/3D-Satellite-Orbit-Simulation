@@ -29,8 +29,8 @@ void initNadirPointing(SimulationState& state)
     glm::vec3 y_dir = glm::cross(z_dir, x_dir);           
 
     glm::mat3 R_desired(x_dir, y_dir, z_dir);
-    state.cubesatOrientation = glm::normalize(glm::quat_cast(R_desired));
-    // state.cubesatOrientation = glm::quat(glm::vec3(glm::radians(20.0f), glm::radians(30.0f), glm::radians(10.0f)));
+    // state.cubesatOrientation = glm::normalize(glm::quat_cast(R_desired));
+    state.cubesatOrientation = glm::quat(glm::vec3(glm::radians(20.0f), glm::radians(30.0f), glm::radians(10.0f)));
     // ^ TEST CASE FOR NADIR POINTING (here, we don't begin at an ideal position)
 
     float mu = Physics::G * Physics::EARTH_MASS;
@@ -156,7 +156,7 @@ void updateAttitudeControl(SimulationState& state, float dt)
     state.wheels.update(dt);
 
     glm::vec3 reactionTorque = state.wheels.computeReactionTorque(dt);
-    updateAttitude(state, reactionTorque);
+    updateAttitude(state, reactionTorque, dt);
 }
 
 // Use non-scaled values in physics calculations
@@ -242,9 +242,8 @@ void processInput(GLFWwindow *window, [[maybe_unused]] SimulationState& state)
             state.cameraMode = CameraMode::ONBOARD;
         else
             state.cameraMode = CameraMode::FREE;
-
-        std::cout << "Camera mode changed to " << static_cast<int>(state.cameraMode) << '\n';
     }
+
     cKeyPressedLastFrame = cKeyPressed;
 }
 

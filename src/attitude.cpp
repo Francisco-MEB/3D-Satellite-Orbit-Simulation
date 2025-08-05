@@ -2,7 +2,7 @@
 #include "attitude.h"
 #include <glm/gtx/quaternion.hpp>
 
-void updateAttitude(SimulationState& state, const glm::vec3& appliedTorque)
+void updateAttitude(SimulationState& state, const glm::vec3& appliedTorque, float simDeltaTime)
 {
     glm::vec3 omega = state.cubesatAngularVel;
 
@@ -13,7 +13,7 @@ void updateAttitude(SimulationState& state, const glm::vec3& appliedTorque)
     glm::vec3 angularAcc = INV_INERTIA * (appliedTorque - omegaCrossH);
 
     // Integrate angular velocity
-    state.cubesatAngularVel += angularAcc * state.deltaTime;
+    state.cubesatAngularVel += angularAcc * simDeltaTime;
 
     // Quaternion derivative
     glm::quat omegaQuat(0.0f, state.cubesatAngularVel.x,
@@ -22,7 +22,7 @@ void updateAttitude(SimulationState& state, const glm::vec3& appliedTorque)
     glm::quat qDot = 0.5f * omegaQuat * state.cubesatOrientation;
 
     // Integrate orientation
-    state.cubesatOrientation += qDot * state.deltaTime;
+    state.cubesatOrientation += qDot * simDeltaTime;
     state.cubesatOrientation = glm::normalize(state.cubesatOrientation);
 }
 
