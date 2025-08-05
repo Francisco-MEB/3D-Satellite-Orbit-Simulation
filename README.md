@@ -14,3 +14,4 @@
   <img src="./preview/nadir_pointing2.png" width="33%" />
   <img src="./preview/nadir_pointing3.png" width="33%" />
 </p>
+<p>[Onboard Camera: Satellite recalibrates to nadir-pointing orientation via reaction wheel torque]</p>
