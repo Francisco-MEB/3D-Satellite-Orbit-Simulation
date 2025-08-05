@@ -26,4 +26,4 @@
   </a>
 </p>
 
-## <p align="center"><strong>Demo Video</strong></p>
+## <p align="center"><strong><a href="https://www.youtube.com/watch?v=Kj6E2tMiXCs">Demo Video</a></strong></p>
