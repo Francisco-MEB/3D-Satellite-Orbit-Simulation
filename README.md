@@ -11,7 +11,7 @@
   <img src="./preview/nadir_pointing2.png" width="32%" />
   <img src="./preview/nadir_pointing3.png" width="32%" />
 </p>
-<p>[Onboard Camera: Three reaction wheels calibrate the satellite to nadir-pointing orientation]</p>
+<p>[Onboard Camera: Reaction wheels calibrate the satellite to nadir-pointing orientation]</p>
 
 ![Onboard View](./preview/nadir_shot.png)
 <p>[Onboard Camera: Satellite maintains nadir-pointing orientation toward Earth's surface throughout orbit]</p>
