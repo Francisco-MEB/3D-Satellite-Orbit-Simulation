@@ -1,5 +1,5 @@
 ## __[Technical Overview (PDF)](./preview/satellite_technical_overview.pdf)__
----
+
 <hr>
 
 ![Free View](./preview/free_shot1.png)  
