@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="./preview/satellite_technical_overview.pdf"><strong>Technical Overview (PDF)</strong></a><p> | </p><a href="https://www.youtube.com/watch?v=Kj6E2tMiXCs"><strong>Demo Video</strong></a>
+  <a href="./preview/satellite_technical_overview.pdf" target="_blank"><strong>Technical Overview (PDF)</strong></a><p> | </p><a target="_blank" href="https://www.youtube.com/watch?v=Kj6E2tMiXCs"><strong>Demo Video</strong></a>
 </h1>
 
 ![Free View](./preview/free_shot1.png)  
