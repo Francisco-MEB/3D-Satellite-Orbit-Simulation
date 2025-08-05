@@ -20,5 +20,10 @@ __[Technical Overview (PDF)](./preview/satellite_technical_overview.pdf)__
 
 <hr>
 
-[![Demo Video Thumbnail](https://img.youtube.com/vi/Kj6E2tMiXCs/0.jpg)](https://www.youtube.com/watch?v=Kj6E2tMiXCs)
-**[DEMO VIDEO]**
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=Kj6E2tMiXCs">
+    <img src="https://img.youtube.com/vi/Kj6E2tMiXCs/0.jpg" alt="Demo Video" width="60%">
+  </a>
+</p>
+
+<p align="center"><strong>Demo Video</strong></p>
