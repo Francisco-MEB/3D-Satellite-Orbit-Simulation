@@ -1,4 +1,4 @@
-__[Technical Overview (PDF)](./preview/satellite_technical_overview.pdf)__
+## __[Technical Overview (PDF)](./preview/satellite_technical_overview.pdf)__
 
 <hr>
 
@@ -26,4 +26,4 @@ __[Technical Overview (PDF)](./preview/satellite_technical_overview.pdf)__
   </a>
 </p>
 
-<p align="center"><strong>Demo Video</strong></p>
+## <p align="center"><strong>Demo Video</strong></p>
