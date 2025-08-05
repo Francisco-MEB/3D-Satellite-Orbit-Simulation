@@ -8,3 +8,9 @@
 
 ![Onboard View](./preview/nadir_shot.png)
 [Onboard Camera: Satellite maintains nadir-pointing orientation toward Earth's surface throughout orbit]
+
+<p align="center">
+  <img src="./preview/nadir_pointing1.png" width="33%" />
+  <img src="./preview/nadir_pointing2.png" width="33%" />
+  <img src="./preview/nadir_pointing3.png" width="33%" />
+</p>
