@@ -365,10 +365,7 @@ float getSimSpeed()
         std::cout << "---------------------------------------------\n";
         std::cout << "1         | 24 hours         | 92 minutes\n";
         std::cout << "60        | 24 minutes       | 1.53 minutes\n";
-        std::cout << "600       | 2.4 minutes      | 9.2 seconds\n";
-        std::cout << "3600      | 24 seconds       | 1.53 minutes\n";
-        std::cout << "8640      | 10 seconds       | 38 seconds\n";
-        std::cout << "86400     | 1 second         | 5.5 seconds\n";
+        std::cout << "600       | 2.4 minutes      | 9.2 seconds\n";   
         std::cout << "---------------------------------------------\n"; 
 
         std::cout << "Enter desired SIM_SPEED: ";
