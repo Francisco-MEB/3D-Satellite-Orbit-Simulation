@@ -20,10 +20,8 @@
 
 <hr>
 
-<p align="center">
+<h2 align="center">
   <a href="https://www.youtube.com/watch?v=Kj6E2tMiXCs">
-    <img src="https://img.youtube.com/vi/Kj6E2tMiXCs/0.jpg" alt="Demo Video" width="60%">
+    Demo Video
   </a>
-</p>
-
-## <p align="center"><strong><a href="https://www.youtube.com/watch?v=Kj6E2tMiXCs">Demo Video</a></strong></p>
+</h2>
