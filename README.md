@@ -18,8 +18,6 @@
 ![Onboard View](./preview/nadir_shot.png)
 <p>[Onboard Camera: Satellite maintains nadir-pointing orientation toward Earth's surface throughout orbit]</p>
 
-<hr>
-
 <h1 align="center">
   <a href="https://www.youtube.com/watch?v=Kj6E2tMiXCs"><strong>Demo Video</strong></a>
 </h1>
