@@ -1,6 +1,6 @@
-<h2 align="center">
-  <a href="./preview/satellite_technical_overview.pdf"><u><strong>Technical Overview (PDF)</strong></u></a>
-</h2>
+<h1 align="center">
+  <a href="./preview/satellite_technical_overview.pdf"><strong>Technical Overview (PDF)</strong></a>
+</h1>
 
 <hr>
 
@@ -23,5 +23,5 @@
 <hr>
 
 <h2 align="center">
-  <a href="https://www.youtube.com/watch?v=Kj6E2tMiXCs"><u><strong>Demo Video</strong></u></a>
+  <a href="https://www.youtube.com/watch?v=Kj6E2tMiXCs"><strong>Demo Video</strong></a>
 </h2>
