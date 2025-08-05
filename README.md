@@ -22,6 +22,8 @@
 
 <hr>
 
-<h2 align="center">
+<h1 align="center">
   <a href="https://www.youtube.com/watch?v=Kj6E2tMiXCs"><strong>Demo Video</strong></a>
-</h2>
+</h1>
+
+<hr>
