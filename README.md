@@ -1,5 +1,7 @@
-[Technical Overview (PDF)](./preview/satellite_technical_overview.pdf)
----
+__[Technical Overview (PDF)](./preview/satellite_technical_overview.pdf)__
+
+<hr>
+
 ![Free View](./preview/free_shot1.png)  
 <p>[Free View: Satellite reflects light on its sun-facing side]</p>
 
@@ -17,5 +19,6 @@
 <p>[Onboard Camera: Satellite maintains nadir-pointing orientation toward Earth's surface throughout orbit]</p>
 
 <hr>
-Demo Video [![Demo Video](https://img.youtube.com/vi/Kj6E2tMiXCs/0.jpg)](https://www.youtube.com/watch?v=Kj6E2tMiXCs)
-<p>[DEMO VIDEO]</p>
+
+[![Demo Video Thumbnail](https://img.youtube.com/vi/Kj6E2tMiXCs/0.jpg)](https://www.youtube.com/watch?v=Kj6E2tMiXCs)
+**[DEMO VIDEO]**
