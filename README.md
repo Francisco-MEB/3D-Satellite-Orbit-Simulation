@@ -1,4 +1,6 @@
-## __[Technical Overview (PDF)](./preview/satellite_technical_overview.pdf)__
+<h2 align="center">
+  <a href="./preview/satellite_technical_overview.pdf"><u><strong>Technical Overview (PDF)</strong></u></a>
+</h2>
 
 <hr>
 
@@ -21,7 +23,6 @@
 <hr>
 
 <h2 align="center">
-  <a href="https://www.youtube.com/watch?v=Kj6E2tMiXCs">
-    Demo Video
-  </a>
+  <a href="https://www.youtube.com/watch?v=Kj6E2tMiXCs"><u><strong>Demo Video</strong></u></a>
 </h2>
+
