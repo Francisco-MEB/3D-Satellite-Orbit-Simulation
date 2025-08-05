@@ -1,10 +1,10 @@
 [Technical Overview (PDF)](./preview/satellite_technical_overview.pdf)
 ---
 ![Free View](./preview/free_shot1.png)  
-[Satellite reflecting as it orbits Earth]
+[Free View: Satellite reflects light on its sun-facing side]
 
 ![Follow View](./preview/follow_shot.png)
-[Satellite against space and Earth backdrop]
+[Follow Camera: Satellite centered against space and Earth backdrop]
 
 ![Onboard View](./preview/nadir_shot.png)
-[Camera pointing at Earth's surface as it orbits]
+[Onboard Camera: Satellite maintains nadir-pointing orientation toward Earth's surface throughout orbit]
