@@ -1,5 +1,7 @@
 <h1 align="center">
-  <a href="./preview/satellite_technical_overview.pdf"><strong>Technical Overview (PDF)</strong></a><p> | </p><a href="https://www.youtube.com/watch?v=Kj6E2tMiXCs"><strong>Demo Video</strong></a>
+  SIBC Amazon Spring 2026
+  <p> | </p>
+  <a href="https://youtu.be/hR3Bsj9gUNY"><strong>Demo Video</strong></a>
 </h1>
 
 ![Free View](./preview/free_shot1.png)  
